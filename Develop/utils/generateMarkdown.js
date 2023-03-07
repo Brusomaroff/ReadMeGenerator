@@ -9,6 +9,8 @@ function renderLicenseBadge(license) {
     yourLicense = `![License: Apache](https://img.shields.io/badge/License-Apache-blue.svg)`
   } else if (license === 'GPL'){
     yourLicense = `![License: GPL](https://img.shields.io/badge/License-GPL-red.svg)`
+  } else if (license === 'None'){
+    yourLicense = ''
   }
   return yourLicense;
 };
@@ -17,8 +19,10 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let yourLink = ''
-  if (license=== 'Mit' ||  license === "Apache" || license === "GPL" ) {
+  if (license=== 'Mit' ||  license === "Apache" || license === "GPL") {
     yourLink = `-[License](#license)`
+  } else if (license=== 'None') {
+    yourLink = ''
   }
  
   return yourLink;
@@ -27,12 +31,11 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license !== "None") {
+  if (license !== 'None') {
     return `# License 
-    - User is using this ${license} license`
-  }
-  
-}
+    - User is using the ${license} license`
+  }  
+};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {

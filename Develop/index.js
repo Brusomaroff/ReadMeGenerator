@@ -39,7 +39,7 @@ const questions = [
         message:'What are the testing instructions for your project',
     },
     {
-        type:'checkbox',
+        type:'list',
         name:'badge',
         message:'What are you asking for your project?',
         choices: ["MIT", "Apache", "GPL", "None"],
