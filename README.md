@@ -20,3 +20,6 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 ---
+link to video demonstration
+[Untitled_ Mar 6, 2023 9_52 PM.webm](https://user-images.githubusercontent.com/120063382/223308578-254929a4-7ea3-48b5-9382-1c3c1a601e64.webm)
+<img width="1433" alt="Screenshot 2023-03-06 at 9 57 52 PM" src="https://user-images.githubusercontent.com/120063382/223308755-34056385-9fa6-4e94-8482-a5e6ae8a8d64.png">
